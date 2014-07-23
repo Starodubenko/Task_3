@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:simpleType name="EmployeeFunctionType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Dispatcher"/>
+            <xsd:enumeration value="Forwarder"/>
+            <xsd:enumeration value="Driver"/>
+            <xsd:enumeration value="Loader"/>
+            <xsd:enumeration value="Cook"/>
+            <xsd:enumeration value="Jurist"/>
+            <xsd:enumeration value="Accountant"/>
+            <xsd:enumeration value="Manager"/>
+            <xsd:enumeration value="Director"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

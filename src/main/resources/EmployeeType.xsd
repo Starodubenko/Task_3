@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:include schemaLocation="AddressType.xsd"/>
+    <xsd:include schemaLocation="TelephoneType.xsd"/>
+    <xsd:include schemaLocation="MobilePhoneType.xsd" />
+    <xsd:include schemaLocation="IdCardType.xsd"/>
+    <xsd:include schemaLocation="EmployeeFunctionType.xsd"/>
+    <xsd:include schemaLocation="FullName.xsd"/>
+
+    <xsd:complexType name="EmployeeType">
+        <xsd:sequence>
+            <xsd:element name="fullName" type="FullName"/>
+            <xsd:element name="address" type="AddressType"/>
+            <xsd:element name="telephone" type="TelephoneType"/>
+            <xsd:element name="mobilePhone" type="MobilePhoneType"/>
+            <xsd:element name="identityCard" type="IdCardType"/>
+            <xsd:element name="function" type="EmployeeFunctionType"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:int" use="required"/>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:simpleType name="PeriodType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="till 2:00"/>
+            <xsd:enumeration value="till 6:00"/>
+            <xsd:enumeration value="after 6:00"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

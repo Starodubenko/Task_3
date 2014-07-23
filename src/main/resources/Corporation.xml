@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+        <Corporation xmlns="http://www.example.com/corporation"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.example.com/corporation Corporation.xsd">
+    <employees>
+        <employee id="011">
+            <fullName>
+                <surname>Kanatov</surname>
+                <firstname>Talgat</firstname>
+                <middlename>Zhaksiadamov</middlename>
+            </fullName>
+            <address>
+                <city>Karaganda</city>
+                <street>Bulvar-Mira</street>
+                <build>28</build>
+                <apartment>28</apartment>
+            </address>
+            <telephone>555-66-11</telephone>
+            <mobilePhone>8-777-555-66-11</mobilePhone>
+            <identityCard>12345678</identityCard>
+            <function>Director</function>
+        </employee>
+    </employees>
+
+   <clients>
+    <client id="001">
+        <fullName>
+            <surname>Ivanov</surname>
+            <firstname>Ivan</firstname>
+            <middlename>Ivanovich</middlename>
+        </fullName>
+        <address>
+            <city>Karaganda</city>
+            <street>Stepnoy-3</street>
+            <build>3</build>
+            <apartment>33</apartment>
+        </address>
+        <order>
+            <count>2</count>
+            <period>till 2:00</period>
+            <price>500</price>
+        </order>
+        <telephone>33-33-33</telephone>
+        <mobilePhone>33-33-33</mobilePhone>
+        <email>Ivan@mail.ru</email>
+    </client>
+
+    <client id="002">
+        <fullName>
+            <surname>Petrov</surname>
+            <firstname>Petr</firstname>
+            <middlename>Petrovich</middlename>
+        </fullName>
+        <address>
+            <city>Karaganda</city>
+            <street>Stepnoy-3</street>
+            <build>3</build>
+            <apartment>33</apartment>
+        </address>
+        <order>
+            <count>2</count>
+            <period>till 2:00</period>
+            <price>500</price>
+        </order>
+        <telephone>44-44-44</telephone>
+        <email>Petr@mail.ru</email>
+    </client>
+
+    <client id="003">
+        <fullName>
+            <surname>Sidorov</surname>
+            <firstname>Fedor</firstname>
+            <middlename>Ivanovich</middlename>
+        </fullName>
+        <address>
+            <city>Karaganda</city>
+            <street>Stepnoy-3</street>
+            <build>3</build>
+            <apartment>33</apartment>
+        </address>
+        <order>
+            <count>2</count>
+            <period>till 2:00</period>
+            <price>500</price>
+        </order>
+        <telephone>11-11-11</telephone>
+        <email>Fedr@mail.ru</email>
+    </client>
+
+        <client id="004">
+            <fullName>
+                <surname>Sholohov</surname>
+                <firstname>Vladimir</firstname>
+                <middlename>Vladimirovich</middlename>
+            </fullName>
+            <address>
+                <city>Karaganda</city>
+                <street>Stepnoy-3</street>
+                <build>3</build>
+                <apartment>33</apartment>
+            </address>
+            <order>
+                <count>2</count>
+                <period>till 2:00</period>
+                <price>500</price>
+            </order>
+            <telephone>55-55-55</telephone>
+            <email>Vlad@mail.ru</email>
+        </client>
+
+        <client id="005">
+            <fullName>
+                <surname>Zhidov</surname>
+                <firstname>Artur</firstname>
+                <middlename>Abramovich</middlename>
+            </fullName>
+            <address>
+                <city>Karaganda</city>
+                <street>Stepnoy-3</street>
+                <build>3</build>
+                <apartment>33</apartment>
+            </address>
+            <order>
+                <count>2</count>
+                <period>till 2:00</period>
+                <price>500</price>
+            </order>
+            <telephone>66-66-66</telephone>
+            <email>Zhid@mail.ru</email>
+        </client>
+   </clients>
+   
+</Corporation>

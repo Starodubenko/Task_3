@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.example.com/corporation"
+            xmlns="http://www.example.com/corporation">
+
+    <xsd:include schemaLocation="Employees.xsd"/>
+    <xsd:include schemaLocation="Clients.xsd"/>
+
+    <xsd:element name="Corporation" type="CorporationList"/>
+
+    <xsd:complexType name="CorporationList">
+        <xsd:sequence>
+            <xsd:element name="employees" type="EmployeeList"/>
+            <xsd:element name="clients" type="ClientsList"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
