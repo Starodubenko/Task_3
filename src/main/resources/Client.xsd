@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:include schemaLocation="Address.xsd"/>
+    <xsd:include schemaLocation="Order.xsd"/>
+    <xsd:include schemaLocation="Phone.xsd"/>
+    <!--<xsd:include schemaLocation="Email.xsd"/>-->
+    <xsd:include schemaLocation="FullName.xsd"/>
+
+    <xsd:complexType name="Client">
+        <xsd:sequence>
+            <xsd:element name="fullName" type="FullName"/>
+            <xsd:element name="address" type="Address"/>
+            <xsd:element name="order" type="Order"/>
+            <xsd:element name="telephone" type="Phone"/>
+            <xsd:element name="mobilePhone" type="Phone"/>
+            <!--<xsd:element name="email" type="Email"/>-->
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:int" use="required"/>
+    </xsd:complexType>
+
+</xsd:schema>

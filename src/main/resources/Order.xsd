@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-    <xsd:include schemaLocation="PeriodType.xsd"/>
+    <xsd:include schemaLocation="Period.xsd"/>
 
-    <xsd:complexType name="OrderType">
+    <xsd:complexType name="Order">
         <xsd:sequence>
             <xsd:element name="count" type="xsd:int"/>
-            <xsd:element name="period" type="PeriodType"/>
+            <xsd:element name="period" type="Period"/>
             <xsd:element name="price" type="xsd:int"/>
         </xsd:sequence>
     </xsd:complexType>

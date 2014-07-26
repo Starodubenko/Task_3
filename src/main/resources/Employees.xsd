@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="corporation"
+            xmlns="corporation">
 
-    <xsd:include schemaLocation="EmployeeType.xsd"/>
+    <xsd:include schemaLocation="Employee.xsd"/>
 
     <xsd:element name="employees" type="EmployeeList"/>
 
     <xsd:complexType name="EmployeeList">
         <xsd:sequence>
-            <xsd:element name="employee" type="EmployeeType" minOccurs="1" maxOccurs="unbounded"/>
+            <xsd:element name="employee" type="Employee" minOccurs="1" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
 
