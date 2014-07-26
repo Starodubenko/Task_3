@@ -4,11 +4,11 @@
     <xsd:include schemaLocation="Period.xsd"/>
 
     <xsd:complexType name="Order">
-        <xsd:sequence>
+        <xsd:all>
             <xsd:element name="count" type="xsd:int"/>
             <xsd:element name="period" type="Period"/>
             <xsd:element name="price" type="xsd:int"/>
-        </xsd:sequence>
+        </xsd:all>
     </xsd:complexType>
 
 </xsd:schema>

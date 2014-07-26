@@ -8,14 +8,14 @@
     <xsd:include schemaLocation="FullName.xsd"/>
 
     <xsd:complexType name="Employee">
-        <xsd:sequence>
+        <xsd:all>
             <xsd:element name="fullName" type="FullName"/>
             <xsd:element name="address" type="Address"/>
             <xsd:element name="telephone" type="Phone"/>
             <xsd:element name="mobilePhone" type="Phone"/>
             <xsd:element name="identityCard" type="IdCard"/>
             <xsd:element name="function" type="EmployeeFunction"/>
-        </xsd:sequence>
+        </xsd:all>
         <xsd:attribute name="id" type="xsd:int" use="required"/>
     </xsd:complexType>
 </xsd:schema>

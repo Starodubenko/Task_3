@@ -2,12 +2,12 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
     <xsd:complexType name="Address">
-        <xsd:sequence>
+        <xsd:all>
             <xsd:element name="city" type="xsd:string"/>
             <xsd:element name="street" type="xsd:string"/>
             <xsd:element name="build" type="xsd:int"/>
             <xsd:element name="apartment" type="xsd:int"/>
-        </xsd:sequence>
+        </xsd:all>
     </xsd:complexType>
 
 </xsd:schema>
